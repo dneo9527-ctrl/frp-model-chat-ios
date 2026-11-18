@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "name": "FrpModelChat",
+  "version": "1.5.0",
+  "build": 10,
+  "tag": "v1.5.0",
+  "repository": "dneo9527-ctrl/frp-model-chat-ios",
+  "implementation_provenance": "e4bad4f263aff4a17b0cb63bfe332769622c83b4",
+  "documentation_overrides": [
+    "README.md"
+  ],
+  "accepted_source_files": [
+    {
+      "path": ".gitignore",
+      "bytes": 805,
+      "sha256": "da1779c6bc1fae0a30a20e33c01191235a1c35446544960a6da4fa588a202662"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1079,
+      "sha256": "1cd916c4ebc3ea43766167123fb5ffe6a1a09a5b8472fec4f8cb560b23bd33ab"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3517,
+      "sha256": "388deb35e83cf706cd0ec6a2ce0bf09376308a500846868039296b93d40d1c90"
+    },
+    {
+      "path": "VERSION",
+      "bytes": 6,
+      "sha256": "acb57a7135b2d7d6e665f67f056e21353023b93835f54def1ae523bf76f1bfb3"
+    },
+    {
+      "path": "build.sh",
+      "bytes": 7224,
+      "sha256": "c026cc2f45a31039d7fb9ad72c9aa4383c68381a5acd013fb335f3400d79ebeb"
+    },
+    {
+      "path": "docs/BLACK-THEME-1.4.2.md",
+      "bytes": 1465,
+      "sha256": "e663fa3686addae8f29f1c25b5ef1adf81844e4d5bfd9cba35d1da9fb5329091"
+    },
+    {
+      "path": "docs/LIVE-ACTIVITY-1.5.0.md",
+      "bytes": 3182,
+      "sha256": "3926bfe7bf067ab87eb523fa15b940179e1b3b4f3c0386592b6576dfd82e70d9"
+    },
+    {
+      "path": "docs/REFINEMENT-1.4.1.md",
+      "bytes": 3099,
+      "sha256": "c9b463931bf8c243253c38a2c0c85c7a966b479a0a753ccd57121d59a4a58756"
+    },
+    {
+      "path": "docs/THIRD-PARTY-NOTICES.txt",
+      "bytes": 204720,
+      "sha256": "af82d463f78050fd33d1a932cb2f111e4a01876787fd73897d68e570c2019f0e"
+    },
+    {
+      "path": "docs/UPDATE-FEED.md",
+      "bytes": 1649,
+      "sha256": "8d460711473ecdd80bfbd46527995c6eb3bf43ffd24f3635dd3c5f1820218bc1"
+    },
+    {
+      "path": "go/e2e/main.go",
+      "bytes": 15804,
+      "sha256": "ff3c1771da0002ae28fbbd6d86248eb9059de555f2f87e19d630020287b3450f"
+    },
+    {
+      "path": "go/frpclib/config.go",
+      "bytes": 8273,
+      "sha256": "00094bcba077731b2996e4d5f995d06ce16525e11e3417af1cc0b6040dd021c4"
+    },
+    {
+      "path": "go/frpclib/frpclib.go",
+      "bytes": 6744,
+      "sha256": "9f6f1d83ec97b170ad64d7695f6a7ee74e65941459059983f01b3780e213374a"
+    },
+    {
+      "path": "go/frpclib/frpclib_test.go",
+      "bytes": 9243,
+      "sha256": "4a987ec545e4dbbe2a96d2a5b8259c5be5b1e68c53ef5b91eb5d04531e0ac71c"
+    },
+    {
+      "path": "go/go.mod",
+      "bytes": 2111,
+      "sha256": "c713deafaafa5b7ab39cf99180351c171249038dd157d0904fe69d7de226e5c3"
+    },
+    {
+      "path": "go/go.sum",
+      "bytes": 19162,
+      "sha256": "a57f1ada839cf27a05e3a5cc77ea4b56abb628a600c758ed3e3b5180d239d337"
+    },
+    {
+      "path": "ios/ConnectionStatusWidget/ConnectionStatusWidget.swift",
+      "bytes": 5108,
+      "sha256": "88ee24f68e3c5ddb50b32a189b738b2322381e73b82d83e1f0e0f6b0371d5397"
+    },
+    {
+      "path": "ios/ConnectionStatusWidget/Info.plist",
+      "bytes": 763,
+      "sha256": "79b2e3e09ae5f745c4d0ef411d3449a1895d54f7f59a6d7fbd2ac0eba6c0a81c"
+    },
+    {
+      "path": "ios/ExportOptions.plist.template",
+      "bytes": 518,
+      "sha256": "f053460dbdcc1343110447bf559ed3e3b0c62ecaa001170debcacdda35bd1eee"
+    },
+    {
+      "path": "ios/FrpClient/AppTheme.swift",
+      "bytes": 4098,
+      "sha256": "6ef9aed2000cbe6e4a52b7b6db53cd1ca00d17360ca768b11fef3d21bd4d99ff"
+    },
+    {
+      "path": "ios/FrpClient/AppUpdates.swift",
+      "bytes": 6989,
+      "sha256": "99445d007bd8b39ca0dbbe0f0bf3ed91bf1a01022470204e15bf51b6ab369450"
+    },
+    {
+      "path": "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+      "bytes": 943264,
+      "sha256": "baebdf8f7da45c43bd0401a6f393c7522ee1c4ca2f82eac7b5f380a7734de004"
+    },
+    {
+      "path": "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-120.png",
+      "bytes": 15863,
+      "sha256": "ed82dee0ebff6fd8f6ba3a05ca5035e45b0244f81919ead5a799ee8b484d6cdd"
+    },
+    {
+      "path": "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-180.png",
+      "bytes": 31776,
+      "sha256": "5347ad7a4c47a0859993d6d1c1ee86374125ddb78b4441a01f7fd44560e7631b"
+    },
+    {
+      "path": "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-40.png",
+      "bytes": 2814,
+      "sha256": "dfccc2cf914c40815c96bfa6f719c95c8a215291f21db6fc907bf4d712c4c96b"
+    },
+    {
+      "path": "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-58.png",
+      "bytes": 4929,
+      "sha256": "7404826667986a148e2c0379710c25965570ed5de1932f758c248e30455220e1"
+    },
+    {
+      "path": "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-60.png",
+      "bytes": 5234,
+      "sha256": "bd207ea0a9efe56868ddbed84d67e5a7c0bdc0ed493b48d475e2a7ef20b34907"
+    },
+    {
+      "path": "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-80.png",
+      "bytes": 8197,
+      "sha256": "4313ecc2d12ac738e8cfa5a925b3782e612f06de49ab881628ed9be75be25644"
+    },
+    {
+      "path": "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-87.png",
+      "bytes": 9485,
+      "sha256": "355d68dab5ce451376cacbb30407159c3845c41b728e68c5b001f34d2fe26420"
+    },
+    {
+      "path": "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "bytes": 741,
+      "sha256": "29006abb8693c91ef443b5b18a1d0c4becce7d0c460e6c56e6c671e628475c91"
+    },
+    {
+      "path": "ios/FrpClient/Assets.xcassets/BrandIcon.imageset/BrandIcon.png",
+      "bytes": 244311,
+      "sha256": "4710ddb751845a16ba064bdae56c49de4189654e49d72bca6303f01135c0be13"
+    },
+    {
+      "path": "ios/FrpClient/Assets.xcassets/BrandIcon.imageset/Contents.json",
+      "bytes": 153,
+      "sha256": "37558927cc96a623e68885371a4f94764807c4751e6ad159d71d3736e41cead0"
+    },
+    {
+      "path": "ios/FrpClient/Assets.xcassets/Contents.json",
+      "bytes": 39,
+      "sha256": "81c54324c918dd55789178a4a2d951210270d905af16c1428f6192d454f76c8f"
+    },
+    {
+      "path": "ios/FrpClient/ChatController.swift",
+      "bytes": 18640,
+      "sha256": "ade0054b68549a8a0ad1e9680315d60e831d6e11c7cc86756c1c47ef56852858"
+    },
+    {
+      "path": "ios/FrpClient/ChatHistoryStore.swift",
+      "bytes": 4906,
+      "sha256": "c834713cae7c30ed61d14e6041b1030f0b78b57332b48a952c49615ece94af36"
+    },
+    {
+      "path": "ios/FrpClient/ChatTransport.swift",
+      "bytes": 13059,
+      "sha256": "1727381951af8cf3769f609c7903ac84fdca1335628f0ef6025f3e2651c8f5d7"
+    },
+    {
+      "path": "ios/FrpClient/ChatView.swift",
+      "bytes": 30160,
+      "sha256": "2e719528d7f23c727f2ba13e377b4ad70f12f268cfbafeecdb908f6ea1f98c3c"
+    },
+    {
+      "path": "ios/FrpClient/ConnectionActivityController.swift",
+      "bytes": 8141,
+      "sha256": "94eb37a8cfb00ecc05adc9273de818c41dea601225e7fdda4bc78ed3b5e5adc1"
+    },
+    {
+      "path": "ios/FrpClient/ContentView.swift",
+      "bytes": 20174,
+      "sha256": "2885e9ee4f21ae0c2be53c81c05af40f66d080c653252bf72d4b92fd05d7c4ed"
+    },
+    {
+      "path": "ios/FrpClient/FrpClientApp.swift",
+      "bytes": 7039,
+      "sha256": "60977f8df704b633bf6187071acbc9fd58d003f155452b8b4172308d479ac3e6"
+    },
+    {
+      "path": "ios/FrpClient/FrpcController.swift",
+      "bytes": 37499,
+      "sha256": "f4f9760586779d36fe71049abd207155bc2f62de9e92463b310501d133ea9337"
+    },
+    {
+      "path": "ios/FrpClient/Info.plist",
+      "bytes": 1850,
+      "sha256": "9b77ff28c4c9136060a8b84b6f1764d357ce51d00616996bdb763b740ce591b0"
+    },
+    {
+      "path": "ios/FrpClient/KeepAlive.swift",
+      "bytes": 4696,
+      "sha256": "2850a2b5cc016e0de7881d493a990c639291ca198fa944069d180a7fadc09dd2"
+    },
+    {
+      "path": "ios/FrpClient/SettingsView.swift",
+      "bytes": 6441,
+      "sha256": "3af14b5a29567ce39d035a8a5658d669d58b732e95aba179d6a0f185a93a5a7f"
+    },
+    {
+      "path": "ios/FrpClient.xcodeproj/project.pbxproj",
+      "bytes": 25448,
+      "sha256": "026ebfb0756f2a1f2db678bd2d28c6727bb949b437417b7b42f7028767d27218"
+    },
+    {
+      "path": "ios/FrpClient.xcodeproj/xcshareddata/xcschemes/FrpChatAcceptance.xcscheme",
+      "bytes": 3889,
+      "sha256": "6d9392c84489aa441d9454fe0d7f7ab192e97a0e75b539ba94a4df9ca22ee3fb"
+    },
+    {
+      "path": "ios/FrpClient.xcodeproj/xcshareddata/xcschemes/FrpClient.xcscheme",
+      "bytes": 3260,
+      "sha256": "4808a6632431a95d5a176d3d2626208658da6b870de8489fc2413ad826b533f8"
+    },
+    {
+      "path": "ios/Shared/ConnectionActivityAttributes.swift",
+      "bytes": 239,
+      "sha256": "51a002539ab0a7695e68e7782500cde1f32099935da8367869bd37501d8b6c01"
+    },
+    {
+      "path": "ios/Shared/TunnelActivityState.swift",
+      "bytes": 1202,
+      "sha256": "a870f3813a8790c18a2fa373135645ef23117892f1100699bc59a387a813ee79"
+    },
+    {
+      "path": "tests/ActivityTests.swift",
+      "bytes": 6445,
+      "sha256": "4bfc42c08bc30ebc4317ce9af2ddbb307b7290544d3ab96f55e177c7c2862f59"
+    },
+    {
+      "path": "tests/ChatTestSupport.swift",
+      "bytes": 8804,
+      "sha256": "7a9554834af9f24657a3d8dbd71087f6d633551434b0d9beb4cfd67f655e5600"
+    },
+    {
+      "path": "tests/ChatTests.swift",
+      "bytes": 40350,
+      "sha256": "59f1619b1c6afbdc6a714281a3c9ae8ce8dc71139d7275a93240195f07d99c43"
+    },
+    {
+      "path": "tests/ChatTunnelE2E.swift",
+      "bytes": 2301,
+      "sha256": "63cd5e375bac4f721f721eddb98dd06d928c966af84ef9f9e94cad0d2732a36d"
+    },
+    {
+      "path": "tests/ChatUITests.swift",
+      "bytes": 15342,
+      "sha256": "8e0cb4c6ca3efcad11b99faf184157492f6f723eb6632fce7bc97922288d20da"
+    },
+    {
+      "path": "tests/ControllerSupport.swift",
+      "bytes": 7840,
+      "sha256": "7f26efbbf6ffc7cf88f190c65242ad8da60a812725f66ed7a3af924214f71f7f"
+    },
+    {
+      "path": "tests/ControllerTests.swift",
+      "bytes": 31480,
+      "sha256": "c168b023361bca2f913bdbedabdceeaf35185b816510660a403357c21a00038c"
+    },
+    {
+      "path": "tests/UpdateTests.swift",
+      "bytes": 4376,
+      "sha256": "cba7a034dd7e5d99150b447fc54d35446acc491a28ee2cf34606390c94d8f6ab"
+    },
+    {
+      "path": "tests/audit-ipa-defaults.py",
+      "bytes": 6351,
+      "sha256": "0f959ca6b41ce165067b6e67f57d69da72901dd8d75e906d7e3c9dd2cebfa300"
+    },
+    {
+      "path": "tests/package-source.py",
+      "bytes": 2563,
+      "sha256": "17c4dd53fb15d86b7f3f7c7de7b56b1aeb1e8159e97bba4bdf3404cb35ffb4ac"
+    },
+    {
+      "path": "tests/run-activity-tests.sh",
+      "bytes": 297,
+      "sha256": "da21b3e6fe4dbb366896841417012184b5ec0281de7963aabe6b7008f642f0aa"
+    },
+    {
+      "path": "tests/run-chat-tests.sh",
+      "bytes": 401,
+      "sha256": "4872f782d75f365dd262569d6c0adb99b62d8ee205c2ab91f126c9d090391371"
+    },
+    {
+      "path": "tests/run-controller-tests.sh",
+      "bytes": 434,
+      "sha256": "6c667aeed5389d0342b558229d1be887f451c9f7ee0d242ed4c718d3c678cede"
+    },
+    {
+      "path": "tests/run-e2e.sh",
+      "bytes": 742,
+      "sha256": "c3a95ae4bb3e68cdd87ac675553190c62c4302b49fa8760d452b14aa0c1596c2"
+    },
+    {
+      "path": "tests/run-ui-tests.sh",
+      "bytes": 1567,
+      "sha256": "2a18fa1d54e7c7432aa48b73b1e2fe1355b00a2c4fb26a07390fe1645da154e7"
+    },
+    {
+      "path": "tests/run-update-tests.sh",
+      "bytes": 439,
+      "sha256": "0ab0a181ab7cbeabd1e2e9d2a83fb4a7597faa6e35fc16fbdfa381c5efd36b5b"
+    }
+  ],
+  "allowed_public_files": [
+    ".github/workflows/checks.yml",
+    ".gitignore",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "VERSION",
+    "build.sh",
+    "docs/BLACK-THEME-1.4.2.md",
+    "docs/INSTALL.md",
+    "docs/LIVE-ACTIVITY-1.5.0.md",
+    "docs/PRIVACY.md",
+    "docs/REFINEMENT-1.4.1.md",
+    "docs/THIRD-PARTY-NOTICES.txt",
+    "docs/UPDATE-FEED.md",
+    "docs/VERIFICATION.md",
+    "go/e2e/main.go",
+    "go/frpclib/config.go",
+    "go/frpclib/frpclib.go",
+    "go/frpclib/frpclib_test.go",
+    "go/go.mod",
+    "go/go.sum",
+    "ios/ConnectionStatusWidget/ConnectionStatusWidget.swift",
+    "ios/ConnectionStatusWidget/Info.plist",
+    "ios/ExportOptions.plist.template",
+    "ios/FrpClient.xcodeproj/project.pbxproj",
+    "ios/FrpClient.xcodeproj/xcshareddata/xcschemes/FrpChatAcceptance.xcscheme",
+    "ios/FrpClient.xcodeproj/xcshareddata/xcschemes/FrpClient.xcscheme",
+    "ios/FrpClient/AppTheme.swift",
+    "ios/FrpClient/AppUpdates.swift",
+    "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+    "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-120.png",
+    "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-180.png",
+    "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-40.png",
+    "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-58.png",
+    "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-60.png",
+    "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-80.png",
+    "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/AppIcon-87.png",
+    "ios/FrpClient/Assets.xcassets/AppIcon.appiconset/Contents.json",
+    "ios/FrpClient/Assets.xcassets/BrandIcon.imageset/BrandIcon.png",
+    "ios/FrpClient/Assets.xcassets/BrandIcon.imageset/Contents.json",
+    "ios/FrpClient/Assets.xcassets/Contents.json",
+    "ios/FrpClient/ChatController.swift",
+    "ios/FrpClient/ChatHistoryStore.swift",
+    "ios/FrpClient/ChatTransport.swift",
+    "ios/FrpClient/ChatView.swift",
+    "ios/FrpClient/ConnectionActivityController.swift",
+    "ios/FrpClient/ContentView.swift",
+    "ios/FrpClient/FrpClientApp.swift",
+    "ios/FrpClient/FrpcController.swift",
+    "ios/FrpClient/Info.plist",
+    "ios/FrpClient/KeepAlive.swift",
+    "ios/FrpClient/SettingsView.swift",
+    "ios/Shared/ConnectionActivityAttributes.swift",
+    "ios/Shared/TunnelActivityState.swift",
+    "release.json",
+    "scripts/audit_release.py",
+    "tests/ActivityTests.swift",
+    "tests/ChatTestSupport.swift",
+    "tests/ChatTests.swift",
+    "tests/ChatTunnelE2E.swift",
+    "tests/ChatUITests.swift",
+    "tests/ControllerSupport.swift",
+    "tests/ControllerTests.swift",
+    "tests/UpdateTests.swift",
+    "tests/audit-ipa-defaults.py",
+    "tests/package-source.py",
+    "tests/run-activity-tests.sh",
+    "tests/run-chat-tests.sh",
+    "tests/run-controller-tests.sh",
+    "tests/run-e2e.sh",
+    "tests/run-ui-tests.sh",
+    "tests/run-update-tests.sh"
+  ],
+  "assets": [
+    {
+      "name": "FrpModelChat-1.5.0-build10-reviewed-unsigned.ipa",
+      "bytes": 8057495,
+      "sha256": "2637ebf7f269f32108c25512626c1717a74df3c36882c3747127fb3a56f11f59"
+    },
+    {
+      "name": "FrpModelChat-1.5.0-build10-reviewed-source.zip",
+      "bytes": 1418796,
+      "sha256": "534e257f8700f1c9dc1cc65424af34070378e4d212407cdf8b15c11fd35a5e24"
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 228,
+      "sha256": "143e0178143229a12efc5522c9a2d2d040d143b07bc3498cf0fbe7c28f9425cc"
+    }
+  ]
+}
